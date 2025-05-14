@@ -6,25 +6,28 @@
     <meta name="description" content="Projeto Portfólio" />
     <meta name="author" content="Henrique Sousa" />
     <meta name="keywords" content="HTML, CSS, JavaScript" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Meu Perfil</title>
   </head>
   <body>
     <header>
-      <div id="header_content">
+      <div id="header_content" class="flex">
         <div id="titulo">
           <h1>Henrique Sousa</h1>
         </div>
-        <nav id="menu">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="contato.html">Contato</a></li>
-          </ul>
-        </nav>
+
+        <div id="menu">
+          <nav>
+            <ul id="menu">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="contato.html">Contato</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <main>
@@ -79,25 +82,30 @@
           </div>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4338.581701098771!2d-46.6501646141109!3d-23.548575906467068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce584c6a3fc8d3%3A0xd375d957b613d1!2sPor%20um%20Punhado%20de%20D%C3%B3lares!5e1!3m2!1spt-BR!2sbr!4v1747068526694!5m2!1spt-BR!2sbr"
-            width="600"
-            height="450"
-            style="border: 0"
+            id="maps"
             allowfullscreen=""
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
+            referrerpolicy="strict-origin-when-cross-origin"
+            title="Mapa destacando o café na rua Nestor Pestana, 115, São Paulo - SP"
           ></iframe>
         </article>
       </section>
     </main>
-    <footer>
+
+    <footer class="flex">
       <section id="redes_sociais">
         <a href="https://www.linkedin.com/in/luiz-henrique-machado/">
-          <i class="social_icon">&#xf08c;</i>
+          <img
+            src="assets/img/linkedin.svg"
+            alt="LinkedIn"
+            class="social_icon"
+          />
         </a>
         <a href="https://github.com/scottineo">
-          <i class="social_icon">&#xf09b;</i>
+          <img src="assets/img/github.svg" alt="Github" class="social_icon" />
         </a>
       </section>
+
       <h3>Feito em colaboração com Generation Brasil - 2025</h3>
     </footer>
   </body>

@@ -58,9 +58,6 @@ p {
   padding: 0.5rem 0;
 }
 
-.fa {
-}
-
 .flex {
   display: flex;
   justify-content: center;
@@ -141,4 +138,76 @@ footer {
 .social_icon:hover {
   filter: brightness(0) saturate(100%) invert(65%) sepia(59%) saturate(2437%)
     hue-rotate(213deg) brightness(86%) contrast(88%);
+}
+#contact {
+  flex-direction: row;
+  gap: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 480px;
+  margin: 2rem 0;
+  padding: 1, 5rem;
+  border: none;
+}
+form label {
+  font-size: 1rem;
+  text-align: left;
+  font-weight: 500;
+}
+form input,
+textarea {
+  margin: 0.5rem 0 1 rem;
+  padding: 0.5rem;
+  border-radius: 1.25rem;
+  border: none;
+  width: 100%;
+  font-size: 1rem;
+}
+textarea {
+  resize: none;
+  height: 5rem;
+}
+form span {
+  margin: 0 0 0.5rem 0.75rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: red;
+}
+form button {
+  text-align: center;
+  padding: 0.75rem 2rem;
+  background: var(--purple-800);
+  border: 1px solid var(--purple-500);
+  color: var(--white);
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+form button:hover {
+  background: var(--purple-500);
+}
+#mapa {
+  width: 480px;
+  flex-direction: column;
+  gap: 3rem;
+}
+#endereco > p {
+  font-size: 1rem;
+  text-align: justify;
+  font-weight: 600;
+}
+#youtube {
+  width: 515px;
+  height: 315px;
+}
+#maps {
+  width: 600px;
+  height: 450px;
+  border: 0;
+}
+#teste {
+  font-size: 3em;
 }
