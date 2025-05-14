@@ -5,19 +5,28 @@
   text-decoration: none;
   outline: none;
   font-weight: 400;
-  font-family: sans-serif;
+  font-family: "Segoe UI", Verdana, sans-serif;
 }
+
 :root {
-  --purple-200: #9a7bd1;
-  --purple-500: #6b36c8;
-  --purple-800: #441f88;
+  --purple-100: #a3b18aff;
+  --purple-200: #588157ff;
+  --purple-500: #3a5a40ff;
+  --purple-800: #344e41ff;
 
   --black-800: #171717;
 
-  --gray-200: #cccccc;
+  --gray-200: #dad7cdff;
   --gray-400: #505861;
 
   --white: #f9f9f9;
+
+  /* novas cores */
+  --timberwolf: #dad7cdff;
+  --sage: #a3b18aff;
+  --fern-green: #588157ff;
+  --hunter-green: #3a5a40ff;
+  --brunswick-green: #344e41ff;
 }
 html {
   width: 100%;
@@ -60,13 +69,22 @@ p {
 
 .flex {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
 .flex_start {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
+}
+.wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
 }
 
 #header_content {
@@ -106,6 +124,7 @@ p {
 
 .img_profile {
   width: 200px;
+  height: 200px;
 }
 #video {
   flex-direction: column;
@@ -157,6 +176,7 @@ form label {
   text-align: left;
   font-weight: 500;
 }
+
 form input,
 textarea {
   margin: 0.5rem 0 1 rem;
@@ -166,16 +186,19 @@ textarea {
   width: 100%;
   font-size: 1rem;
 }
+
 textarea {
   resize: none;
   height: 5rem;
 }
+
 form span {
   margin: 0 0 0.5rem 0.75rem;
   font-size: 0.75rem;
   line-height: 1rem;
   color: red;
 }
+
 form button {
   text-align: center;
   padding: 0.75rem 2rem;
@@ -186,9 +209,11 @@ form button {
   font-size: 1rem;
   font-weight: 700;
 }
+
 form button:hover {
   background: var(--purple-500);
 }
+
 #mapa {
   width: 480px;
   flex-direction: column;
@@ -208,6 +233,15 @@ form button:hover {
   height: 450px;
   border: 0;
 }
-#teste {
-  font-size: 3em;
+
+.teste {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }

@@ -7,6 +7,9 @@
     <meta name="author" content="Henrique Sousa" />
     <meta name="keywords" content="HTML, CSS, JavaScript" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <title>Meu Perfil</title>
   </head>
   <body>
@@ -24,59 +27,49 @@
       </div>
     </header>
     <main>
-      <section id="about" class="flex_start">
-        <h2>Sobre mim</h2>
-        <div id="conteudo" class="flex">
-          <img
-            src="https://ik.imagekit.io/sc0tt1n30/my-notion-face-portrait.png?tr=w-200,h-200"
-            alt="Ilustração do criador desse conteudo"
-            class="img_profile"
-          />
+      <div class="flex">
+        <section id="about">
+          <h2>Sobre mim</h2>
+          <div id="conteudo" class="container">
+            <img
+              src="https://ik.imagekit.io/sc0tt1n30/my-notion-face-portrait.png?tr=w-200,h-200"
+              alt="Ilustração do criador desse conteudo"
+              class="img_profile"
+            />
 
-          <article id="sobre_texto">
-            <p>
-              Como Desenvolvedor Back-End Júnior iniciando minha carreira, sou
-              apaixonado por construir a lógica e a infraestrutura de aplicações
-              escaláveis e por solucionar desafios do lado do servidor. Possuo
-              conhecimentos fundamentais em Java, Javascript, nos frameworks
-              Spring e React, bancos de dados do tipo SQL e APIs seguindo o
-              padrão RESTful, além de familiaridade com Git e GitHub. Apliquei
-              estas habilidades em projetos acadêmicos e pessoais, focando no
-              desenvolvimento de estruturas sólidas e reutilizáveis, e agora
-              busco minha primeira oportunidade como Desenvolvedor Back-end para
-              aplicar meus conhecimentos, aprender e contribuir ativamente com o
-              desenvolvimento de software.
-            </p>
-            <p>
-              <span id="teste">Anteriormente</span>, atuei como Professor
-              Assistente na Escola Móbile por 6 anos e 6 meses, onde planejei e
-              ministrei aulas de Ciências, gerenciei projetos educacionais,
-              liderei equipes e desenvolvi materiais didáticos utilizando
-              ferramentas digitais. Minha formação acadêmica inclui Licenciatura
-              e Bacharelado em Biologia/Ciências Biológicas pela Universidade de
-              São Paulo. Atualmente, estou cursando Pós-graduação em Tecnologia
-              da Informação na PUC Minas e Desenvolvimento Full-Stack com Java
-              na Generation Brasil, o que demonstra meu forte direcionamento
-              para a área de tecnologia.
-            </p>
-          </article>
-        </div>
-      </section>
+            <article id="sobre_texto">
+              <p>
+                Estou iniciando a minha carreira como desenvolvedor Full Stack,
+                sou apaixonado por construir a lógica e a infraestrutura de
+                aplicações escaláveis e por solucionar desafios do lado do
+                servidor. Possuo conhecimentos fundamentais em Java, Javascript,
+                nos frameworks Spring e React, bancos de dados do tipo SQL e
+                APIs seguindo o padrão RESTful, além de familiaridade com Git e
+                GitHub. Apliquei estas habilidades em projetos acadêmicos e
+                pessoais, focando no desenvolvimento de estruturas sólidas e
+                reutilizáveis, e agora busco minha primeira oportunidade como
+                Desenvolvedor Back-end para aplicar meus conhecimentos, aprender
+                e contribuir ativamente com o desenvolvimento de software.
+              </p>
+            </article>
+          </div>
+        </section>
 
-      <section id="video" class="flex_start">
-        <h2>Vídeo temático para a semana:</h2>
-        <div class="youtube" class="flex">
-          <iframe
-            src="https://www.youtube.com/embed/HkmlfHi9Ll4?si=zvSSYGqSzgaQZlHQ"
-            title="YouTube video player"
-            id="youtube"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </section>
+        <section id="video" class="flex_start">
+          <h2>Vídeo temático para a semana:</h2>
+          <div class="youtube">
+            <iframe
+              src="https://www.youtube.com/embed/HkmlfHi9Ll4?si=zvSSYGqSzgaQZlHQ"
+              title="YouTube video player"
+              id="youtube"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </section>
+      </div>
     </main>
     <footer class="flex">
       <section id="redes_sociais">
