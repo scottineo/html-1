@@ -21,7 +21,6 @@
 
   --white: #f9f9f9;
 
-  /* novas cores */
   --timberwolf: #dad7cdff;
   --sage: #a3b18aff;
   --fern-green: #588157ff;
@@ -54,8 +53,8 @@ h2 {
 
 h3 {
   padding: 1rem;
-  color: var(--white);
-  font-size: 1.25rem;
+  color: var(--gray-200);
+  font-size: 1rem;
   font-weight: 700;
   text-align: center;
 }
@@ -113,28 +112,22 @@ p {
   text-decoration: underline;
 }
 #about {
-  flex-direction: column;
-  margin: 2rem auto;
-  width: 90%;
-}
-#conteudo {
-  flex-direction: row;
-  gap: 2rem;
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
 }
 
-.img_profile {
-  width: 200px;
-  height: 200px;
-}
 #video {
+  display: flex;
   flex-direction: column;
   margin: 2rem auto;
   width: 90%;
+  gap: 40px;
 }
 footer {
   flex-direction: column;
   margin: 0;
-  padding: 2rem;
+  padding: 0.2rem;
   color: var(--white);
   background-color: var(--purple-500);
   font-weight: bold;
@@ -208,6 +201,7 @@ form button {
   border-radius: 0.75rem;
   font-size: 1rem;
   font-weight: 700;
+  margin: 1rem;
 }
 
 form button:hover {
@@ -217,7 +211,7 @@ form button:hover {
 #mapa {
   width: 480px;
   flex-direction: column;
-  gap: 3rem;
+  gap: 1rem;
 }
 #endereco > p {
   font-size: 1rem;
@@ -225,8 +219,12 @@ form button:hover {
   font-weight: 600;
 }
 #youtube {
-  width: 515px;
-  height: 315px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 #maps {
   width: 600px;
@@ -234,14 +232,65 @@ form button:hover {
   border: 0;
 }
 
-.teste {
+.secundario {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 1%;
+  height: 100%;
+}
+conteudo {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+}
+.img_profile {
+  width: 15%;
+  height: 15%;
+  border-radius: 50%;
+  border: 2px solid var(--purple-500);
 }
 
-.container {
+.principal {
   display: flex;
-  flex-direction: row;
+  align-items: flex-start;
+  padding: 0 5%;
+  height: 100%;
+  gap: 20px;
+}
+.sect_principal {
+  flex-direction: column;
+  margin: 2rem auto;
+  width: 90%;
+  flex: 1;
+}
+
+.titulo_principal {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.video_container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+#sobre_texto {
+  flex: 1;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+#mapa_container {
 }
