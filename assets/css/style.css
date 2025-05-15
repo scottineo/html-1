@@ -162,8 +162,8 @@ footer {
   color: black;
 }
 .social_icon:hover {
-  filter: brightness(0) saturate(100%) invert(65%) sepia(59%) saturate(2437%)
-    hue-rotate(213deg) brightness(86%) contrast(88%);
+  filter: brightness(0) saturate(100%) invert(73%) sepia(10%) saturate(489%)
+    hue-rotate(44deg) brightness(94%) contrast(84%);
 }
 #contact {
   flex-direction: row;
@@ -349,6 +349,6 @@ form button:hover {
   font-size: 40px;
 }
 .lang_icon:hover {
-  filter: brightness(0) saturate(100%) invert(65%) sepia(59%) saturate(2437%)
-    hue-rotate(213deg) brightness(86%) contrast(88%);
+  filter: brightness(0) saturate(100%) invert(29%) sepia(17%) saturate(1757%)
+    hue-rotate(78deg) brightness(96%) contrast(88%);
 }
