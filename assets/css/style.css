@@ -63,7 +63,7 @@ p {
   font-size: 1rem;
   line-height: 1.5rem;
   text-align: justify;
-  padding: 0.5rem 0;
+  padding: 0 0;
 }
 
 .flex {
@@ -141,7 +141,6 @@ p {
 footer {
   flex-direction: column;
   margin: 0;
-  padding: 0.2rem;
   color: var(--white);
   background-color: var(--purple-500);
   font-weight: bold;
@@ -266,6 +265,7 @@ form button:hover {
   border: 3px solid var(--purple-100);
   object-fit: cover;
   flex-shrink: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .principal {
@@ -300,10 +300,11 @@ form button:hover {
 #sobre_texto {
   flex: 1;
   min-width: 0;
-  padding: 1rem;
+  padding: 1.5rem;
   background-color: var(--white);
   border-radius: 8px;
   border: 3px solid var(--purple-100);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .footer {
@@ -314,6 +315,7 @@ form button:hover {
   bottom: 0;
   left: 0;
   width: 100%;
+  padding: 1rem;
 }
 .coluna_perfil {
   display: flex;
@@ -321,6 +323,7 @@ form button:hover {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 #linguagens {
   display: flex;
@@ -343,7 +346,7 @@ form button:hover {
 .lang_container h3 {
   padding: 0.5rem 0;
   color: var(--gray-200);
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
@@ -355,6 +358,6 @@ form button:hover {
   font-size: 40px;
 }
 .lang_icon:hover {
-  filter: brightness(0) saturate(100%) invert(29%) sepia(17%) saturate(1757%)
-    hue-rotate(78deg) brightness(96%) contrast(88%);
+  filter: brightness(0) saturate(100%) invert(73%) sepia(10%) saturate(489%)
+    hue-rotate(44deg) brightness(94%) contrast(84%);
 }
