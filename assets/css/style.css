@@ -111,6 +111,20 @@ p {
   color: var(--purple-200);
   text-decoration: underline;
 }
+.linguagens li {
+  display: inline;
+  padding: 1rem;
+}
+
+.linguagens li a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 20px;
+}
+.linguagens li a:hover {
+  color: var(--purple-200);
+  text-decoration: underline;
+}
 #about {
   display: flex;
   gap: 15px;
@@ -122,7 +136,7 @@ p {
   flex-direction: column;
   margin: 2rem auto;
   width: 90%;
-  gap: 40px;
+  gap: 20px;
 }
 footer {
   flex-direction: column;
@@ -234,36 +248,41 @@ form button:hover {
 
 .secundario {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  padding: 1%;
-  height: 100%;
-}
-conteudo {
-  display: flex;
-  gap: 15px;
+  flex-direction: row;
   align-items: flex-start;
+  gap: 20px;
+  padding: 35px;
+  height: 100%;
+  background-color: var(--sage);
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  height: auto;
 }
+
 .img_profile {
-  width: 15%;
-  height: 15%;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   border: 2px solid var(--purple-500);
+  object-fit: cover;
+  flex-shrink: 0;
 }
 
 .principal {
   display: flex;
   align-items: flex-start;
-  padding: 0 5%;
-  height: 100%;
-  gap: 20px;
+  padding: 0 5% 5rem 5%;
+  height: auto;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 .sect_principal {
   flex-direction: column;
+  display: flex;
   margin: 2rem auto;
-  width: 90%;
-  flex: 1;
+  width: 100%;
+  max-width: 800px;
+  flex: 1 1 400px;
 }
 
 .titulo_principal {
@@ -280,17 +299,56 @@ conteudo {
 }
 #sobre_texto {
   flex: 1;
+  min-width: 0;
+  padding: 1rem;
 }
 
 .footer {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
-  position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
 }
-#mapa_container {
+.coluna_perfil {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+#linguagens {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+.lang_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+.lang_container h3 {
+  padding: 0.5rem 0;
+  color: var(--purple-800);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.lang_icon {
+  width: 3rem;
+  height: 3rem;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7457%)
+    hue-rotate(23deg) brightness(95%) contrast(87%);
+  font-size: 40px;
+}
+.lang_icon:hover {
+  filter: brightness(0) saturate(100%) invert(65%) sepia(59%) saturate(2437%)
+    hue-rotate(213deg) brightness(86%) contrast(88%);
 }
