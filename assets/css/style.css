@@ -249,11 +249,11 @@ form button:hover {
 .secundario {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   gap: 20px;
   padding: 35px;
   height: 100%;
-  background-color: var(--sage);
+  background-color: var(--purple-800);
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   height: auto;
@@ -263,7 +263,7 @@ form button:hover {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  border: 2px solid var(--purple-500);
+  border: 3px solid var(--purple-100);
   object-fit: cover;
   flex-shrink: 0;
 }
@@ -301,6 +301,9 @@ form button:hover {
   flex: 1;
   min-width: 0;
   padding: 1rem;
+  background-color: var(--white);
+  border-radius: 8px;
+  border: 3px solid var(--purple-100);
 }
 
 .footer {
@@ -332,11 +335,14 @@ form button:hover {
   align-items: center;
   gap: 0.5rem;
   text-align: center;
+  background-color: var(--purple-500);
+  border-radius: 8px;
+  padding: 10px;
 }
 
 .lang_container h3 {
   padding: 0.5rem 0;
-  color: var(--purple-800);
+  color: var(--gray-200);
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
