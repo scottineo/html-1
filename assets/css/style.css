@@ -131,7 +131,7 @@ p {
   align-items: flex-start;
 }
 
-#video {
+.video {
   display: flex;
   flex-direction: column;
   margin: 2rem auto;
@@ -139,14 +139,19 @@ p {
   gap: 20px;
 }
 footer {
+  display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   color: var(--white);
   background-color: var(--purple-500);
   font-weight: bold;
   text-align: center;
+  width: 100%;
+  padding: 1rem;
 }
-#redes_sociais {
+.redes_sociais {
   display: flex;
   justify-content: space-evenly;
   margin: 1rem 0 0 0;
@@ -231,7 +236,7 @@ form button:hover {
   text-align: justify;
   font-weight: 600;
 }
-#youtube {
+.youtube {
   position: absolute;
   top: 0;
   left: 0;
@@ -297,7 +302,7 @@ form button:hover {
   height: 0;
   overflow: hidden;
 }
-#sobre_texto {
+.sobre_texto {
   flex: 1;
   min-width: 0;
   padding: 1.5rem;
@@ -307,16 +312,6 @@ form button:hover {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.footer {
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: center;
-  align-items: center;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 1rem;
-}
 .coluna_perfil {
   display: flex;
   flex-direction: column;
@@ -325,7 +320,7 @@ form button:hover {
   gap: 1rem;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-#linguagens {
+.linguagens {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -360,4 +355,8 @@ form button:hover {
 .lang_icon:hover {
   filter: brightness(0) saturate(100%) invert(73%) sepia(10%) saturate(489%)
     hue-rotate(44deg) brightness(94%) contrast(84%);
+}
+
+.input_contato {
+  border-radius: 8px;
 }
