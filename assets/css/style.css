@@ -1,3 +1,4 @@
+/* === GLOBAL RESET & ROOT VARIABLES === */
 * {
   margin: 0;
   padding: 0;
@@ -9,34 +10,31 @@
 }
 
 :root {
-  --purple-100: #a3b18aff;
-  --purple-200: #588157ff;
-  --purple-500: #3a5a40ff;
-  --purple-800: #344e41ff;
+  --quaternary: #a3b18aff;
+  --tertiary: #588157ff;
+  --primary: #3a5a40ff;
+  --secondary: #344e41ff;
 
   --black-800: #171717;
 
-  --gray-200: #dad7cdff;
+  --back: #dad7cdff;
   --gray-400: #505861;
 
   --white: #f9f9f9;
-
-  --timberwolf: #dad7cdff;
-  --sage: #a3b18aff;
-  --fern-green: #588157ff;
-  --hunter-green: #3a5a40ff;
-  --brunswick-green: #344e41ff;
 }
+
+/* === BASE STYLES === */
 html {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 body {
-  background: var(--gray-200);
+  background: var(--back);
   color: var(--black-800);
 }
 
+/* === TYPOGRAPHY === */
 h1 {
   color: var(--white);
   font-size: 2rem;
@@ -53,7 +51,7 @@ h2 {
 
 h3 {
   padding: 1rem;
-  color: var(--gray-200);
+  color: var(--back);
   font-size: 1rem;
   font-weight: 700;
   text-align: center;
@@ -63,9 +61,10 @@ p {
   font-size: 1rem;
   line-height: 1.5rem;
   text-align: justify;
-  padding: 0 0;
+  padding: 0;
 }
 
+/* === LAYOUT UTILITIES === */
 .flex {
   display: flex;
   flex-direction: row;
@@ -77,15 +76,8 @@ p {
   display: flex;
   justify-content: center;
 }
-.wrap {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: auto;
-}
 
+/* === HEADER & NAVIGATION === */
 #header_content {
   height: 80px;
   position: sticky;
@@ -93,8 +85,9 @@ p {
   width: 100%;
   justify-content: space-between;
   padding: 24px;
-  background: var(--purple-800);
-  border-bottom: 1px solid var(--purple-500);
+  background: var(--primary);
+  border-bottom: 1px solid var(--secondary);
+  z-index: 1000;
 }
 
 #menu li {
@@ -103,174 +96,16 @@ p {
 }
 
 #menu li a {
-  text-decoration: none;
   color: var(--white);
   font-size: 20px;
 }
+
 #menu li a:hover {
-  color: var(--purple-200);
+  color: var(--tertiary);
   text-decoration: underline;
 }
-.linguagens li {
-  display: inline;
-  padding: 1rem;
-}
 
-.linguagens li a {
-  text-decoration: none;
-  color: var(--white);
-  font-size: 20px;
-}
-.linguagens li a:hover {
-  color: var(--purple-200);
-  text-decoration: underline;
-}
-#about {
-  display: flex;
-  gap: 15px;
-  flex-basis: 48%;
-}
-
-.video {
-  margin: 2rem auto;
-  width: 90%;
-  gap: 20px;
-}
-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  color: var(--white);
-  background-color: var(--purple-500);
-  font-weight: bold;
-  text-align: center;
-  width: 100%;
-  padding: 1rem;
-}
-.redes_sociais {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 1rem 0 0 0;
-  width: 320px;
-}
-.social_icon {
-  width: 4rem;
-  height: 4rem;
-  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7457%)
-    hue-rotate(23deg) brightness(95%) contrast(87%);
-  font-size: 40px;
-  color: black;
-}
-.social_icon:hover {
-  filter: brightness(0) saturate(100%) invert(73%) sepia(10%) saturate(489%)
-    hue-rotate(44deg) brightness(94%) contrast(84%);
-}
-#contact {
-  flex-direction: row;
-  gap: 2rem;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  width: 480px;
-  margin: 2rem 0;
-  padding: 1, 5rem;
-  border: none;
-}
-form label {
-  font-size: 1rem;
-  text-align: left;
-  font-weight: 500;
-}
-
-form input,
-textarea {
-  margin: 0.5rem 0 1 rem;
-  padding: 0.5rem;
-  border-radius: 1.25rem;
-  border: none;
-  width: 100%;
-  font-size: 1rem;
-}
-
-textarea {
-  resize: none;
-  height: 5rem;
-}
-
-form span {
-  margin: 0 0 0.5rem 0.75rem;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  color: red;
-}
-
-form button {
-  text-align: center;
-  padding: 0.75rem 2rem;
-  background: var(--purple-800);
-  border: 1px solid var(--purple-500);
-  color: var(--white);
-  border-radius: 0.75rem;
-  font-size: 1rem;
-  font-weight: 700;
-  margin: 1rem;
-}
-
-form button:hover {
-  background: var(--purple-500);
-}
-
-#mapa {
-  width: 480px;
-  flex-direction: column;
-  gap: 1rem;
-}
-#endereco > p {
-  font-size: 1rem;
-  text-align: justify;
-  font-weight: 600;
-}
-.youtube {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 80%;
-  height: 80%;
-  border: none;
-}
-#maps {
-  width: 600px;
-  height: 450px;
-  border: 0;
-}
-
-.secundario {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 20px;
-  padding: 35px;
-  height: 100%;
-  background-color: var(--purple-800);
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  height: auto;
-}
-
-.img_profile {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  border: 3px solid var(--purple-100);
-  object-fit: cover;
-  flex-shrink: 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
+/* === MAIN CONTENT LAYOUT === */
 .principal {
   display: flex;
   justify-content: space-between;
@@ -278,10 +113,12 @@ form button:hover {
   padding: 0 5% 5rem 5%;
   height: auto;
   gap: 15px;
+  flex-wrap: wrap;
 }
+
 .sect_principal {
-  flex-direction: column;
   display: flex;
+  flex-direction: column;
   justify-content: flex-start;
   margin: 2rem auto;
   width: 100%;
@@ -294,21 +131,24 @@ form button:hover {
   margin-bottom: 15px;
 }
 
-.video_container {
-  position: relative;
-  width: 100%;
-  padding-top: 56.25%;
-  height: 0;
-  overflow: hidden;
+/* === ABOUT SECTION === */
+#about {
+  display: flex;
+  gap: 15px;
+  flex-basis: 48%;
 }
-.sobre_texto {
-  flex: 1;
-  min-width: 0;
-  padding: 1.5rem;
-  background-color: var(--white);
+
+.secundario {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  padding: 35px;
+  background-color: var(--secondary);
   border-radius: 8px;
-  border: 3px solid var(--purple-100);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  height: auto;
+  flex-wrap: wrap;
 }
 
 .coluna_perfil {
@@ -319,12 +159,28 @@ form button:hover {
   gap: 1rem;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-.linguagens {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 1rem;
+
+.img_profile {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid var(--quaternary);
+  object-fit: cover;
+  flex-shrink: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
+.sobre_texto {
+  flex: 1;
+  min-width: 0;
+  padding: 1.5rem;
+  background-color: var(--white);
+  border-radius: 8px;
+  border: 3px solid var(--quaternary);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* === SKILLS SECTION (LANGUAGES) === */
 .lang_container {
   display: flex;
   flex-direction: column;
@@ -332,30 +188,188 @@ form button:hover {
   align-items: center;
   gap: 0.5rem;
   text-align: center;
-  background-color: var(--purple-500);
+  background-color: var(--primary);
   border-radius: 8px;
   padding: 10px;
 }
 
 .lang_container h3 {
   padding: 0.5rem 0;
-  color: var(--gray-200);
+  color: var(--back);
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
+
+.linguagens {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* === VIDEO SECTION === */
+.video {
+  margin: 2rem auto;
+  /* width: 90%; */
+  gap: 20px;
+}
+
+.video_container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.youtube {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* === ICON STYLES (Social & Language) === */
+.social_icon,
 .lang_icon {
-  width: 3rem;
-  height: 3rem;
+  display: block;
   filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7457%)
     hue-rotate(23deg) brightness(95%) contrast(87%);
-  font-size: 40px;
 }
+
+.social_icon:hover,
 .lang_icon:hover {
   filter: brightness(0) saturate(100%) invert(73%) sepia(10%) saturate(489%)
     hue-rotate(44deg) brightness(94%) contrast(84%);
 }
 
-.input_contato {
+.social_icon {
+  width: 4rem;
+  height: 4rem;
+}
+
+.lang_icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+/* === CONTACT FORM === */
+#contact {
+  flex-direction: row;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 480px;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  border: none;
+}
+
+form label {
+  font-size: 1rem;
+  text-align: left;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+form input,
+form textarea {
+  margin: 0.5rem 0 1rem 0;
+  padding: 0.5rem;
   border-radius: 8px;
+  border: 1px solid var(--gray-400);
+  width: 100%;
+  font-size: 1rem;
+  background-color: var(--white);
+}
+
+form textarea {
+  resize: none;
+  height: 5rem;
+}
+
+form span {
+  margin: -0.75rem 0 0.5rem 0.75rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: red;
+  display: block;
+  min-height: 1rem;
+}
+
+form button {
+  text-align: center;
+  padding: 0.75rem 2rem;
+  background: var(--primary);
+  border: 1px solid var(--secondary);
+  color: var(--white);
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 1rem auto 0;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: var(--secondary);
+}
+
+/* === MAP SECTION === */
+#mapa {
+  gap: 1rem;
+  align-items: center;
+}
+
+#endereco {
+  text-align: center;
+}
+
+#endereco > p {
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+#mapa_container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#maps {
+  width: 100%;
+  height: 450px;
+  border: 0;
+}
+
+/* === FOOTER === */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  color: var(--white);
+  background-color: var(--secondary);
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  padding: 1rem;
+}
+
+.redes_sociais {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 1rem 0;
 }
